@@ -1,0 +1,383 @@
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 1600px;
+}
+
+.container {
+  width: 1110px;
+}
+ul li a {
+  list-style-type: none;
+  color: #0f0101;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: #e9f0fd;
+  text-align: center;
+  font-family: "Roboto Black";
+  color: #555252;
+}
+
+main,
+.container {
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Roboto-Black";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 48px;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: white;
+  height: 50px;
+}
+
+.menu {
+  height: 91px;
+  vertical-align: middle;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.menu ul {
+  text-align: right;
+  float: right;
+  width: 465px;
+}
+.menu ul li {
+  float: left;
+  padding-top: 43px;
+  padding-right: 31.9px;
+  padding-bottom: 39px;
+  font-size: 0;
+}
+
+.menu ul li:last-child {
+  padding-right: 0;
+}
+.menu ul li a {
+  display: block;
+  font-size: 14px;
+  line-height: 10px;
+}
+.menu ul li a:hover {
+  color: #1abc9c;
+}
+
+.logo {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  color: #555252;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 36px;
+  padding-bottom: 32px;
+  float: left;
+}
+
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+/* SLIDER */
+.slider {
+  text-align: left;
+  width: 1600px;
+  height: 600px;
+  margin: 0 0 100px 0;
+  position: relative;
+}
+.slider-image-overlay {
+  width: 1600px;
+  height: 600px;
+  position: absolute;
+  background-color: rgba(0, 0, 2, 0.556);
+  left: 0;
+  top: 0px;
+}
+.slider-content {
+  transform: translate(0, 220px);
+  display: block;
+  z-index: 10;
+}
+
+.slider-content div,
+button {
+  float: left;
+}
+
+.slider-description {
+  width: 738px;
+  font-size: 60px;
+  letter-spacing: -0.02em;
+}
+.slider-description p {
+  font-family: "Roboto Light";
+}
+
+.slider h2 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 27px;
+}
+.slider p {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto-Light";
+  font-size: 24px;
+}
+
+.slider-button {
+  background-color: rgba(26, 188, 156, 0.46);
+  width: 104px;
+  height: 104px;
+  border: none;
+}
+
+button.slider-button:hover {
+  background-color: #1abc9c;
+}
+.prev {
+  margin-top: 17px;
+  margin-right: 82px;
+}
+
+.next {
+  margin-top: 17px;
+  margin-left: 82px;
+}
+/* PRODUCTS */
+h4.product-title {
+  text-align: left;
+  width: 201px;
+  padding-top: 6px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  float: left;
+  font-size: 18px;
+}
+
+.products {
+  padding-bottom: 100px;
+}
+.products h2::after {
+  width: 164px;
+  background-color: rgb(26, 188, 156);
+  content: "";
+  height: 7px;
+  display: block;
+  margin: 30px 500px 81px 475px;
+}
+
+.product {
+  width: 255px;
+  height: 322px;
+  position: relative;
+  font-size: 18px;
+  float: left;
+  margin-right: 30px;
+}
+.product:last-child {
+  margin-right: 0;
+}
+
+.product-info {
+  width: 255px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  float: left;
+  background-color: #323232;
+  height: 40px;
+  font-family: "Roboto Black";
+}
+
+.product-info a {
+  color: white;
+}
+
+.product-price {
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.44);
+  width: 54px;
+  height: 40px;
+  padding-top: 6px;
+}
+
+/* icons */
+.product-heart-icon {
+  background-image: url("../img/icons/heart.png");
+  /* background-repeat: no-repeat; */
+  /* text-align: center; */
+  width: 50px;
+  height: 50px;
+}
+.product-share-icon {
+  background-image: url("../img/icons/share.png");
+  /* background-repeat: no-repeat; */
+  /* text-align: center; */
+  width: 50px;
+  height: 50px;
+}
+.product-wishlist-icon {
+  background-image: url("../img/icons/wishlist.png");
+  /* background-repeat: no-repeat; */
+  /* text-align: center; */
+  width: 50px;
+  height: 50px;
+}
+.product-cart-icon {
+  background-image: url("../img/icons/cart.png");
+  background-repeat: no-repeat;
+  /* text-align: center; */
+  width: 50px;
+  height: 50px;
+}
+
+.visualy-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* hover */
+.product:hover .product-border-overlay {
+  visibility: visible;
+}
+.product:hover .product-overlay {
+  visibility: visible;
+}
+.product:hover .product-info {
+  background-color: #1abc9c;
+}
+.product:hover .product-price {
+  background-color: rgba(255, 255, 255, 0.439);
+}
+
+/* overlay */
+.product-border-overlay {
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 255px;
+  height: 282px;
+  background-color: rgba(255, 255, 254, 0.5);
+}
+
+.product-overlay {
+  background-color: rgba(0, 0, 0, 0.549);
+  width: 235px;
+  height: 262px;
+  transform: translate(10px, 10px);
+  visibility: hidden;
+}
+
+/* .product-overlay button:hover {
+  background-color: #1abc9c;
+} */
+
+/* product icons */
+.icons-wrap {
+  width: 166px;
+  height: 107px;
+  position: absolute;
+  transform: translate(35px, 80px);
+}
+
+.add-to-card-container button {
+  border: 1px solid white;
+  width: 166px;
+  height: 50px;
+  text-align: left;
+  background-color: #323232;
+}
+
+.add-to-card-button-title {
+  padding: 10px 0 0 11px;
+  letter-spacing: -0.02em;
+  float: right;
+  width: 112px;
+  height: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.add-to-card-button-icon {
+  float: left;
+}
+
+.action-icons-container {
+  background-color: transparent;
+  border: 1px none rgb(255, 255, 255);
+  height: 50px;
+  width: 166px;
+  margin-bottom: 7px;
+}
+
+.action-icons-container button {
+  float: left;
+  background-color: transparent;
+  margin-right: 8px;
+  letter-spacing: -0.36em;
+}
+
+.action-icons-container button:last-child {
+  margin-right: 0;
+}
+
+/* FOOTER */
+footer {
+  height: 88px;
+  background-color: #323232;
+  font-family: "Open Sans";
+  vertical-align: middle;
+}
+
+footer p {
+  text-align: center;
+  color: #fefefe;
+  font-size: 16px;
+  padding-top: 36px;
+}
+
+footer a {
+  float: none;
+  color: #46bfa9;
+  text-decoration: none;
+}
