@@ -178,11 +178,19 @@ button.slider-button:hover {
 h4.product-title {
   text-align: left;
   width: 201px;
-  padding-top: 6px;
+  padding-top: 4px;
   padding-left: 15px;
   text-transform: uppercase;
   float: left;
   font-size: 18px;
+}
+.product-price {
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.44);
+  width: 54px;
+  height: 40px;
+  padding-top: 4px;
 }
 
 .products {
@@ -222,15 +230,6 @@ h4.product-title {
 
 .product-info a {
   color: white;
-}
-
-.product-price {
-  display: inline-block;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.44);
-  width: 54px;
-  height: 40px;
-  padding-top: 6px;
 }
 
 /* icons */
