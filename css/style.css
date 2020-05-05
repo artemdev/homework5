@@ -306,9 +306,9 @@ h4.product-title {
   visibility: hidden;
 }
 
-/* .product-overlay button:hover {
+.product-overlay button:hover {
   background-color: #1abc9c;
-} */
+}
 
 /* product icons */
 .icons-wrap {
