@@ -75,7 +75,7 @@
   padding: 0;
 }
 body {
-  width: 1600px;
+  width: 100%;
 }
 
 html {
@@ -186,18 +186,19 @@ nav {
 /* SLIDER */
 .slider {
   text-align: left;
-  width: 1600px;
+  width: 100%;
   height: 600px;
   margin: 0 0 100px 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .slider-description {
   width: 738px;
 }
 .slider-image-overlay {
-  width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 2, 0.556);
   left: 0;
@@ -290,7 +291,6 @@ h4.product-title {
 
 .product {
   width: 255px;
-  height: 322px;
   position: relative;
   font-size: 18px;
   float: left;
@@ -357,9 +357,7 @@ h4.product-title {
 }
 
 /* hover */
-.product:hover .product-border-overlay {
-  visibility: visible;
-}
+
 .product:hover .product-overlay {
   visibility: visible;
 }
@@ -370,21 +368,23 @@ h4.product-title {
   background-color: rgba(255, 255, 255, 0.439);
 }
 
-/* overlay */
-.product-border-overlay {
-  top: 0;
-  position: absolute;
-  visibility: hidden;
+.product-image-wrap {
   width: 255px;
   height: 282px;
-  background-color: rgba(255, 255, 254, 0.5);
+  position: relative;
 }
 
+/* overlay */
+
 .product-overlay {
+  border: 10px solid;
+  background-clip: content-box;
+  border-color: rgba(255, 255, 254, 0.549);
   background-color: rgba(0, 0, 0, 0.549);
-  width: 235px;
-  height: 262px;
-  transform: translate(10px, 10px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
   visibility: hidden;
 }
 
@@ -398,14 +398,6 @@ h4.product-title {
   height: 107px;
   position: absolute;
   transform: translate(35px, 80px);
-}
-
-.add-to-card-container button {
-  border: 1px solid white;
-  width: 166px;
-  height: 50px;
-  text-align: left;
-  background-color: #323232;
 }
 
 .add-to-card-button-title {
@@ -423,16 +415,28 @@ h4.product-title {
 .add-to-card-button-icon {
   float: left;
 }
+.product-icons-wrap {
+  width: 166px;
+  height: 50px;
+}
 
-.action-icons-container {
+.add-to-card-button-row {
+  width: 166px;
+  height: 50px;
+  border: 1px solid white;
+  text-align: left;
+  background-color: #323232;
+}
+
+.action-icons-row {
   background-color: transparent;
   border: 1px none rgb(255, 255, 255);
-  height: 50px;
   width: 166px;
+  height: 50px;
   margin-bottom: 7px;
 }
 
-.action-icons-container button {
+.action-icons-row button {
   float: left;
   background-color: transparent;
   margin-right: 8px;
@@ -440,7 +444,7 @@ h4.product-title {
   border: 1px solid white;
 }
 
-.action-icons-container button:last-child {
+.action-icons-row button:last-child {
   margin-right: 0;
 }
 
